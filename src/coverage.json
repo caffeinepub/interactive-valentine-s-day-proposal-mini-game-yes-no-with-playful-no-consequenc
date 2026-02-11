@@ -1,0 +1,40 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-11T10:25:05.270Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 1,
+    "implemented": 1,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Add the user-uploaded image (Snapchat-1579100041.jpg) to the frontend as a static asset under frontend/public/assets/generated and use it as the image displayed on the success screen (the view shown after clicking “Yes”) instead of the current /assets/generated/heart-couple-portrait.dim_1024x1024.png.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/after-yes-photo.dim_736x1472.jpg",
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/after-yes-photo.dim_736x1472.jpg",
+          "frontend/src/App.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/after-yes-photo.dim_736x1472.jpg",
+    "frontend/src/App.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

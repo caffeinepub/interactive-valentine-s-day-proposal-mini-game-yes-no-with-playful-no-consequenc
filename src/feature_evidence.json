@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-the-user-uploaded-image-snapchat-1579100041-jpg-to-the-frontend-as-a-static-asset-under-frontend-public-assets-generated-and-use-it-as-the-image-displayed-on-the-success-screen-the-view-shown-after-clicking-yes-instead-of-the-current-assets-generated-heart-couple-portrait-dim-1024x1024-png",
+      "featureTitle": "Add the user-uploaded image (Snapchat-1579100041.jpg) to the frontend as a static asset under frontend/public/assets/generated and use it as the image displayed on the success screen (the view shown after clicking “Yes”) instead of the current /assets/generated/heart-couple-portrait.dim_1024x1024.png.",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-10"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

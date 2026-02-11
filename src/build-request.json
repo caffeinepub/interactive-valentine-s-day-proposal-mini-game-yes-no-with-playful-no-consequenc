@@ -1,0 +1,41 @@
+{
+  "kind": "build_request",
+  "title": "Use uploaded photo on the Yes success screen",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "text": "Add the user-uploaded image (Snapchat-1579100041.jpg) to the frontend as a static asset under frontend/public/assets/generated and use it as the image displayed on the success screen (the view shown after clicking “Yes”) instead of the current /assets/generated/heart-couple-portrait.dim_1024x1024.png.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "use this image for the image after yes"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A copy of the uploaded file Snapchat-1579100041.jpg is present under frontend/public/assets/generated with a stable filename (including .dim_WxH in the filename).",
+        "When the user clicks “Yes”, the success screen renders the uploaded image (via a /assets/generated/... path) instead of /assets/generated/heart-couple-portrait.dim_1024x1024.png.",
+        "The image is loaded directly by the frontend (no backend fetch) and displays correctly in preview/production.",
+        "The success screen keeps existing messages and animations unchanged; only the image source/alt text is updated as needed (alt text in English)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not route images through the backend; serve them as static assets from frontend/public/assets/generated.",
+    "Do not change any immutable frontend paths listed in SYSTEM_CONTEXT.",
+    "Keep all existing success-screen text exactly as currently implemented; only replace the displayed image asset."
+  ],
+  "nonGoals": [
+    "Changing the Yes/No interaction logic, success messaging rules, or No-button escalation behavior.",
+    "Adding any backend logic or persistence."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Monochrome photo of two people holding hands (after-yes-photo.dim_736x1472.jpg)"
+    ],
+    "edits": []
+  }
+}

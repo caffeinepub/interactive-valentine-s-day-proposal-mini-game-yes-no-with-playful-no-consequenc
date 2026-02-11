@@ -1,0 +1,29 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Use uploaded photo as the Yes success-screen image",
+  "requirements": [
+    {
+      "id": "REQ-10",
+      "summary": "Add the uploaded photo as a generated static asset and swap the success-screen image to use it after clicking “Yes”.",
+      "acceptanceCriteria": [
+        "A copy of the uploaded file Snapchat-1579100041.jpg is present under frontend/public/assets/generated with a stable filename (including .dim_WxH in the filename).",
+        "When the user clicks “Yes”, the success screen renders the uploaded image (via a /assets/generated/... path) instead of /assets/generated/heart-couple-portrait.dim_1024x1024.png.",
+        "The image is loaded directly by the frontend (no backend fetch) and displays correctly in preview/production.",
+        "The success screen keeps existing messages and animations unchanged; only the image source/alt text is updated as needed (alt text in English)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/after-yes-photo.dim_736x1472.jpg",
+          "operation": "create",
+          "description": "Add a static asset copy of the uploaded Snapchat-1579100041.jpg at this stable generated filename (includes .dim_736x1472) so it is served directly from frontend/public."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "On the success view (rendered after clicking “Yes”), replace the current image src (/assets/generated/heart-couple-portrait.dim_1024x1024.png) with /assets/generated/after-yes-photo.dim_736x1472.jpg and update only the img alt text (English) while keeping all existing success-screen messages, layout, and animations unchanged."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no implemented logic.",
+  "feature_evidence.json": "Feature evidence report describing an update to use a user-uploaded image in the success screen.",
+  "frontend-file-summaries.txt": "Prewritten summaries of key frontend files including App.tsx, global styles, Tailwind config, and an empty hook.",
+  "frontend/index.css": "Tailwind base theme variables and dark mode settings defining global UI colors and layout behavior.",
+  "frontend/index.html": "Basic HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Main game component handling proposal/success views and dynamic No-button behavior with an updated success photo.",
+  "frontend/src/hooks/useActor.ts": "Hook creating and managing a backend actor instance tied to Internet Identity and react-query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context and provider managing Internet Identity authentication and login state.",
+  "frontend/src/hooks/useQueries.ts": "Empty module placeholder for backend query hooks.",
+  "frontend/src/index.css": "Valentine‑themed Tailwind variables and background styling with a decorative pattern image.",
+  "frontend/src/main.tsx": "App bootstrap wiring React, react-query, Internet Identity provider, and global CSS.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending theme colors, fonts, animations, and Valentine color tokens.",
+  "project_state.json": "Defines the project’s current Valentine mini‑game state, including feature descriptions, No-button behavior, conditional Yes message, required image assets, and known issues. Serves as the authoritative specification for UI flow and interactions."
+}

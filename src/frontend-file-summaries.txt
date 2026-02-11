@@ -1,0 +1,6 @@
+{
+  "frontend/src/App.tsx": "Main Valentine's Day proposal game component with two views (proposal and success), implementing a 4-step \"No\" button escalation with progressive shrinking and specific emoji+text per step (angry→most angry→feeling→crying), hiding the \"No\" button after step 4, and displaying conditional success messages based on whether the user clicked \"No\" before \"Yes\", now using the uploaded couple photo on the success screen.",
+  "frontend/src/index.css": "Global styles with Valentine's Day themed OKLCH color palette, custom animations including the new romantic-float and romantic-glow effects for the success message, with reduced-motion support.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with Valentine-themed color tokens and custom font settings to support the romantic design system.",
+  "frontend/src/hooks/useQueries.ts": "Empty placeholder file as no backend queries are required for this frontend-only interactive game."
+}
